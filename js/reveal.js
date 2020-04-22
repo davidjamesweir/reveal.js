@@ -4568,7 +4568,7 @@
 	 */
 	function getTotalSlides() {
 
-		return getSlides().length;
+		return getSlides().length - dom.wrapper.querySelectorAll( SLIDES_SELECTOR + '.extraslide').length;
 
 	}
 
